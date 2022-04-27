@@ -6,11 +6,23 @@ export const main = () => {
   return name;
 };
 
+export interface Size {
+  width: number;
+  height: number;
+}
+
+export interface IState {
+  root: string;
+  size?: Size;
+}
+
 export class OM {
   root: string;
+  size: Size;
 
-  constructor(root = '#root') {
-    this.root = root
+  constructor(state: IState) {
+    this.root = state.root;
+    this.size = state.size || {width: 700, height: 700}
   }
 
   getRandomTree(N: number) {
@@ -36,6 +48,8 @@ export class OM {
     } else {
       const Graph = ForceGraph3D()
       (rootEl as HTMLElement)
+        .width(this.size.width)
+        .height(this.size.height)
         .graphData(this.getRandomTree(30));
     }
   }

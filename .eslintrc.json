@@ -3,9 +3,6 @@
     "project": "./tsconfig.*?.json"
   },
   "extends": [
-    "@kep/eslint-config-kakao-fe",
-    "@kep/eslint-config-kakao-fe/react",
-    "@kep/eslint-config-kakao-fe/typescript",
     "prettier"
   ],
   "env": {
