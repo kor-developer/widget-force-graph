@@ -1,0 +1,63 @@
+{
+  "name": "widget-force-graph",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kor-developer/widget-force-graph.git"
+  },
+  "packageManager": "yarn@3.2.0",
+  "main": "lib/main.bundle.cjs.js",
+  "module": "lib/main.bundle.esm.js",
+  "types": "lib/main.d.ts",
+  "author": {
+    "name": "sam rho",
+    "email": "seungnam2@gmail.com",
+    "url": "https://github.com/kor-developer"
+  },
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
+    "test": "jest --runInBand",
+    "lint": "eslint ./src/**",
+    "initProject": "node -e 'require(\"./scripts/init.js\").init()' -- "
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@kep/eslint-config-kakao-fe": "^4.2.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.2",
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^12.1.4",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.22",
+    "@types/react": "^17.0.42",
+    "@types/testing-library__jest-dom": "^5.14.3",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "^5.17.0",
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^2.7.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-react": "latest",
+    "jest": "^27.5.1",
+    "prettier": "^2.6.1",
+    "prettier-plugin-organize-imports": "^2.3.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup": "^2.70.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "semantic-release": "^19.0.2",
+    "ts-jest": "^27.1.3",
+    "ts-node": "^10.7.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "3d-force-graph": "^1.70.10"
+  }
+}
