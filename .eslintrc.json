@@ -1,0 +1,26 @@
+{
+  "parserOptions": {
+    "project": "./tsconfig.*?.json"
+  },
+  "extends": [
+    "@kep/eslint-config-kakao-fe",
+    "@kep/eslint-config-kakao-fe/react",
+    "@kep/eslint-config-kakao-fe/typescript",
+    "prettier"
+  ],
+  "env": {
+    "node": true,
+    "commonjs": true,
+    "jest": true
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "project": "./tsconfig.*?.json"
+      }
+    },
+    "react": {
+      "version": "detect"
+    }
+  }
+}
